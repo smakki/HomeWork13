@@ -44,7 +44,7 @@ namespace RegularCustomer
                     {
                         if (!shop.Remove(itemId))
                         {
-                            Console.WriteLine("Не найден товар с указанным ID");
+                            Console.WriteLine("No product found with the specified ID");
                         }
                     }
                     else
@@ -83,7 +83,6 @@ namespace RegularCustomer
                 Items.Remove(item);
             }
             return deleted;
-
         }
 
         public void Subscribe(Customer customer)
@@ -114,6 +113,6 @@ namespace RegularCustomer
     class Item
     {
         public int Id;
-        public string Name;
+        public string? Name;
     }
 }
